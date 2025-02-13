@@ -1,0 +1,12 @@
+name: stockpredictor_prep_train_env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip=20.0
+  - pytorch
+  - pip:
+    - mldesigner==0.1.0b12
+    - numpy
