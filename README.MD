@@ -1,11 +1,13 @@
 # Documentation
 
-## Standalone training pipelines
+Mini-project documentation is demonstrated with 3 main headers: **Standalone training pipeline, Pipeline with Scheduler and Prediction**
+
+## 1 - Standalone training pipeline
 
 single_training.ipynb contains procedures to start standalone training. Code for data preparation and training is separate implementation than pipeline with scheduler which is described below. This notebook allows to start training job manually whenever debugging or development is required.
 Notebook contains custom environment creation from Docker context. This custom environment is used within job execution which provides required libraries such as torch.
 
-## Pipeline with Scheduler
+## 2 - Pipeline with Scheduler
 
 Pipeline is defined in the pipeline.py script.
 There is a pipeline created and attached to a scheduler which triggers that pipeline job to run every day.
@@ -45,7 +47,7 @@ To run pipeline with scheduler:
 python pipeline.py
 ```
 
-## Prediction
+## 3 - Prediction
 
 predict.py script contains logic to load registered model in AzureML workspace and make predictions and visualize those predictions.
 
